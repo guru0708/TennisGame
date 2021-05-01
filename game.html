@@ -1,7 +1,19 @@
 <html>
-    <head>
-        <script>
-            console.log("Hello World");    
-        </script>
-    </head>
+    <h1>Play Tennis Game</h1>
+    <canvas id="gameCanvas" height="600" width="800"></canvas>
+    <script>
+        var canvas;
+        var canvasContext;
+
+        window.onload = function () {
+            canvas = document.getElementById("gameCanvas");
+            canvasContext = canvas.getContext("2d");
+            canvasContext.fillStyle = "black";
+            canvasContext.fillRect(0, 0, canvas.width, canvas.height);
+            canvasContext.fillStyle = "red";
+            canvasContext.fillRect(0, 0, 15, 80);
+            canvasContext.fillStyle = "green";
+            canvasContext.fillRect(785, 520, 15, 80);
+        };
+    </script>
 </html>
